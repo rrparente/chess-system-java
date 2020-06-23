@@ -22,7 +22,8 @@ public class ChessPosition {
 		return row;
 	}
 	
-	protected Position toPosition() {
+	//TODO protected
+	public Position toPosition() {
 		return new Position(8 - row, column - 'a');
 	}
 	
