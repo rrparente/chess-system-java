@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
+
 import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
@@ -20,6 +21,7 @@ public class Program {
 		
 		while(!chessMatch.getCheckMate()) {
 			try {
+				
 				UI.clearScreen();
 				UI.printMatch(chessMatch, captured);
 				System.out.println();
@@ -38,6 +40,8 @@ public class Program {
 				
 				if(capturedPiece != null)
 					captured.add(capturedPiece);
+
+				
 			}
 			
 			catch(ChessException e){
